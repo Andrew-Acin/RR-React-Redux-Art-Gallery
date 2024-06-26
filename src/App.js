@@ -33,6 +33,8 @@ function App(props) {
       }} />
       <div>
         {data.objectId}
+        <br/>
+        {data.artistDisplayName}
         {renderImg()}
       </div>
     </div>
@@ -41,5 +43,6 @@ function App(props) {
 
 
 const mapStateToProps = (state, ownProps) => ({ objectId: state.data.objectId })
+
 
 export default connect(mapStateToProps)(App);
